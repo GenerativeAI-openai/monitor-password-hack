@@ -44,7 +44,7 @@
         async function fetch_data(passwordToUse) {
             isRunning = true;
 
-            const response = await fetch("/cancel", {
+            const response = await fetch("/password", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
