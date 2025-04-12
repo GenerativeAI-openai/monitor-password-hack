@@ -44,7 +44,7 @@
         async function fetch_data(passwordToUse) {
             isRunning = true;
 
-            const response = await fetch("http://localhost:3000/proxy/cancel", {
+            const response = await fetch("/cancel", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
