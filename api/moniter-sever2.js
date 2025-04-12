@@ -28,7 +28,7 @@ function generateUniquePassword() {
   return password;
 }
 
-app.post("/proxy/cancel", async (req, res) => {
+app.post("/password", async (req, res) => {
   try {
     const password = generateUniquePassword();
     const { sessionId, activityId } = req.body;
